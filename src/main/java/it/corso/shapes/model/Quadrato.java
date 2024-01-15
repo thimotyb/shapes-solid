@@ -22,4 +22,9 @@ public class Quadrato {
 
 	}
 
+	public double calcolaArea() {
+		// TODO Auto-generated method stub
+		return new Double(lato*lato);
+	}
+
 }

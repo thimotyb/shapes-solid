@@ -22,4 +22,9 @@ public class Cerchio {
 
 	}
 
+	public double calcolaArea() {
+		// TODO Auto-generated method stub
+		return 3.14*3.14*raggio;
+	}
+
 }

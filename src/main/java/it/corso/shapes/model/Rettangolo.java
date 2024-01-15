@@ -24,4 +24,9 @@ public class Rettangolo {
 
 	}
 
+	public double calcolaArea() {
+		// TODO Auto-generated method stub
+		return new Double(larghezza*altezza); // Check Sonarlint's suggestion on casting int to double
+	}
+
 }
