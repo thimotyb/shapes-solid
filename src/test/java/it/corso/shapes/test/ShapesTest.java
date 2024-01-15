@@ -79,7 +79,7 @@ public class ShapesTest {
 		double areaTotale = c.calcolaAreaTotale();
 		
 		assertTrue("L'area totale � positiva", areaTotale > 0);
-		assertEquals("L'area totale � pari a 68", 75.7192, areaTotale, 0.01);
+		assertEquals("L'area totale � pari a 75", 75.7192, areaTotale, 0.01);
 		
 	}
 	
@@ -97,8 +97,8 @@ public class ShapesTest {
 		Triangolo t = new Triangolo(2, 2);
 		c.add(t);
 		
-		int areaTotale = c.calcolaAreaTotale();
-		assertEquals("L'area totale � pari a 70", 70, areaTotale);
+		double areaTotale = c.calcolaAreaTotale();
+		assertEquals("L'area totale � pari a 77", 77.7192, areaTotale, 0.01);
 		
 	}
 
