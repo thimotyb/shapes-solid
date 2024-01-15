@@ -1,6 +1,7 @@
 package it.corso.shapes;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import it.corso.shapes.model.Cerchio;
@@ -52,6 +53,21 @@ public class Canvas {
 	public void add(Quadrato q) {
 		// TODO Auto-generated method stub
 		quadrati.add(q);
+	}
+
+	public double calcolaAreaTotale() {
+		// TODO Auto-generated method stub
+		double totalArea = 0;
+		for(Quadrato q: quadrati) {
+			totalArea += q.calcolaArea();
+		}
+		for(Cerchio ce: cerchi) {
+			totalArea += ce.calcolaArea();
+		}
+		for(Rettangolo r: rettangoli) {
+			totalArea += r.calcolaArea();
+		}
+		return totalArea;
 	}
 
 }

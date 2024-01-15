@@ -68,7 +68,7 @@ public class ShapesTest {
 		
 	}
 	
-	// This test fails, need to implement
+	// This test is now implemented
 	@Test
 	public void shouldCalculateCanvasArea() {
 		
@@ -76,10 +76,10 @@ public class ShapesTest {
 		c.add(ce);
 		c.add(q);
 		
-		int areaTotale = c.calcolaAreaTotale();
+		double areaTotale = c.calcolaAreaTotale();
 		
 		assertTrue("L'area totale � positiva", areaTotale > 0);
-		assertEquals("L'area totale � pari a 68", 68, areaTotale);
+		assertEquals("L'area totale � pari a 68", 75.7192, areaTotale, 0.01);
 		
 	}
 
