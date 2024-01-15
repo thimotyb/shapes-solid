@@ -54,4 +54,18 @@ public class ShapesTest {
 		
 	}
 
+	@Test
+	public void shouldCalculateAreaOnShape() {
+	
+		int area = r.calcolaArea();		
+		assertTrue("L'area non � nulla", area>0);
+		
+		int areaCerchio = ce.calcolaArea();
+		assertTrue("L'area del cerchio non � nulla", areaCerchio>0);
+		
+		int areaQuadrato = q.calcolaArea();
+		assertTrue("L'area del quadrato non � nulla", areaQuadrato>0);
+		
+	}
+
 }

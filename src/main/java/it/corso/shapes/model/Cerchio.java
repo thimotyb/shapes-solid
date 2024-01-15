@@ -22,12 +22,4 @@ public class Cerchio {
 
 	}
 
-	public int calcolaArea(){
-		return raggio*raggio*3;
-	}
-
-	public int calcolaPerimetro(){
-		return 0;
-	}
-
 }

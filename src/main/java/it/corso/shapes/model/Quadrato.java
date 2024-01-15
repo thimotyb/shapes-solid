@@ -22,12 +22,4 @@ public class Quadrato {
 
 	}
 
-	public int calcolaArea(){
-		return lato*lato;
-	}
-
-	public int calcolaPerimetro(){
-		return 0;
-	}
-
 }
