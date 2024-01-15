@@ -24,12 +24,4 @@ public class Rettangolo {
 
 	}
 
-	public int calcolaArea(){
-		return this.altezza*this.larghezza;
-	}
-
-	public int calcolaPerimetro(){
-		return 0;
-	}
-
 }
