@@ -10,7 +10,6 @@ import it.corso.shapes.Canvas;
 import it.corso.shapes.model.Cerchio;
 import it.corso.shapes.model.Quadrato;
 import it.corso.shapes.model.Rettangolo;
-import it.isosistemi.shapes.Triangolo;
 
 
 public class ShapesTest {
