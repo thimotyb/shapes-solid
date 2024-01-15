@@ -67,5 +67,20 @@ public class ShapesTest {
 		assertTrue("L'area del quadrato non � nulla", areaQuadrato>0);
 		
 	}
+	
+	// This test fails, need to implement
+	@Test
+	public void shouldCalculateCanvasArea() {
+		
+		c.add(r);
+		c.add(ce);
+		c.add(q);
+		
+		int areaTotale = c.calcolaAreaTotale();
+		
+		assertTrue("L'area totale � positiva", areaTotale > 0);
+		assertEquals("L'area totale � pari a 68", 68, areaTotale);
+		
+	}
 
 }
