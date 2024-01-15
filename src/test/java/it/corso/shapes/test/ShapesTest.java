@@ -10,6 +10,7 @@ import it.corso.shapes.Canvas;
 import it.corso.shapes.model.Cerchio;
 import it.corso.shapes.model.Quadrato;
 import it.corso.shapes.model.Rettangolo;
+import it.isosistemi.shapes.Triangolo;
 
 
 public class ShapesTest {
@@ -82,5 +83,25 @@ public class ShapesTest {
 		assertEquals("L'area totale � pari a 68", 75.7192, areaTotale, 0.01);
 		
 	}
+	
+	//
+	// TO implement this test, we realize that we need to refactor to 
+	// honor OCP (Open-Closed Principle) and DIP (Dependency Inversion Principle)
+	// We will simulate using tests to check that our refactor is not causing regression.
+	@Test
+	public void shouldCalculateTriangles() {
+		
+		c.add(r);
+		c.add(ce);
+		c.add(q);
+		
+		Triangolo t = new Triangolo(2, 2);
+		c.add(t);
+		
+		int areaTotale = c.calcolaAreaTotale();
+		assertEquals("L'area totale � pari a 70", 70, areaTotale);
+		
+	}
+
 
 }
