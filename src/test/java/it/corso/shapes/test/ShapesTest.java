@@ -6,6 +6,11 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import it.corso.shapes.Canvas;
+import it.corso.shapes.model.Cerchio;
+import it.corso.shapes.model.Quadrato;
+import it.corso.shapes.model.Rettangolo;
+
 
 public class ShapesTest {
 
